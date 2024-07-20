@@ -1,0 +1,333 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*,*:before,*:after{
+    box-sizing: border-box;
+  }
+body {
+    font-family: 'Bruno Ace SC', cursive;
+	line-height: 1.5;
+  }
+.container {
+    width: 1296px;
+    margin:0 auto;
+}
+
+.bg-black{
+	background-color: black;
+}
+
+.bg-white{
+	background-color: white;
+}
+
+nav{
+	display: flex;
+}
+nav ul{
+	width: 100%;
+	margin-top: 40px;
+	display: flex;
+	justify-content:space-between;
+	align-items: center;
+}
+
+nav ul li a{
+	text-decoration: none;
+	padding: 5px 0;
+}
+
+.text-gray{
+	color: #D1D1D1;
+}
+
+.text-green{
+	color: #00FFA3;
+}
+
+.text-white{
+	color: white;
+}
+
+.text-dark{
+	color: black;
+}
+
+.text-align-right{
+	text-align: right;
+}
+
+.text-align-center{
+	text-align: center;
+}
+
+.text-nowrap{
+	white-space: nowrap;
+}
+
+.text-space-sm{
+	letter-spacing:1px;
+}
+
+.align-items-start{
+	align-items: flex-start
+}
+
+.align-items-end{
+	align-items: flex-end
+}
+
+.align-items-center{
+	align-items: center;
+}
+
+.justify-content-space-between{
+	justify-content: space-between;
+}
+
+img{
+	vertical-align: middle;
+	/* source: https://ithelp.ithome.com.tw/articles/10220731 */
+	max-width: 100%;
+	/* https://www.cnblogs.com/soyxiaobi/p/9640729.html */
+	object-fit: cover;
+}
+
+.banner{
+	display:flex;
+}
+
+.banner .banner_flex{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.fs-3{
+	font-size: 4rem;
+}
+
+h3{
+	font-size: 1.25rem;
+}
+
+.w-50{
+	width: 50%;
+}
+
+.w-40{
+	width: 40%;
+}
+
+.intro{
+	margin-left: auto;
+	flex-direction: column;
+	display: flex;
+}
+
+.self-start{
+	align-self: start;
+}
+
+.self-end{
+	align-self: flex-end;
+}
+
+.button{
+	display: flex;
+	padding: 12px;
+	border-radius: 32px;
+	background-color: #fff;
+	text-decoration: none;
+}
+
+.button-black{
+	display: flex;
+	padding: 8px 16px;
+	border-radius: 32px;
+	background-color: #000;
+	text-decoration: none;
+}
+
+.pl-2{
+	padding-left: 0.25rem;
+}
+
+.pr-3{
+	padding-right: 1rem;
+}
+
+.mr-6{
+	margin-right: 24px;
+}
+
+.mb-6{
+	margin-bottom: 24px;
+}
+
+.ml-1{
+	margin-left: 1px;
+}
+
+.ml-550{
+	margin-left: 550px;
+}
+
+.mt-160{
+	margin-top: 160px;
+}
+
+.mb-160{
+	margin-bottom: 160px;
+}
+
+.mr-110{
+	margin-right: 110px;
+}
+
+.my-128{
+	margin: 128px 0;
+}
+
+.py-96{
+	padding: 96px 0;
+}
+
+.pd-top-24{
+	padding-top: 24px;
+}
+
+.image-w60{
+	width: 60%;
+}
+
+.banner .container{
+	padding-top: 72px;
+	padding-bottom: 72px;
+}
+
+.flex{
+	display: flex;
+}
+
+.flex-col{
+	flex-direction: column;
+}
+
+
+.intro_detail{
+	padding: 128px 0;
+	width: 40%;
+	font-size: 24px;
+}
+
+.intro_detail .flex img{
+	margin-right: 16px;
+}
+
+.intro_imgs{
+	margin-left: auto;
+	padding: 128px 0;
+	display: flex;
+}
+
+.intro_imgs img{
+	margin-right: 14px;
+}
+.intro_imgs img:nth-child(3){
+	margin-right: 0;
+}
+
+.skills{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.card{
+	width: 50%;
+	border: 1px solid #E3E3E3;
+	padding: 16px;
+	margin-right: 20px;
+	margin-bottom: 24px;
+}
+
+.card:nth-child(2n){
+	margin-left: 2px;
+}
+
+.about_me_text{
+	font-size: 24px;
+	margin-left: auto;
+}
+
+.image{
+	object-fit: cover;
+	border-radius: 40px;
+	width: 162px;
+	height: 162px;
+}
+
+.image:hover{
+	box-shadow: 0px 0px 16px 3px rgba(144, 148, 255, 0.9);
+	border-radius: 40px;
+}
+
+footer{
+	background-color: black;
+	background-size: cover;
+  	background-repeat: no-repeat;
+	padding: 40px 0px;
+}
+
+.background-img{
+	background-image: url("./imgs/background-img.png");
+	background-size: cover;
+  	background-repeat: no-repeat;
+}
+
